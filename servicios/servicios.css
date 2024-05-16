@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TABLA MOBILE */
+
+
+@media screen and (max-width: 768px) {
+    .tablaMobile {
+        display: block;
+        width: 100%;
+    }
+
+    .tableDesktop{
+        display: none;
+    }
+
+    .tablaMobile .fila .columna{
+        display: flex;
+    }
+
+    .tablaMobile .fila .columna .header, .tablaMobile .fila .columna .contenido {
+        border: 1px solid #cecece;
+        border-bottom: none;
+        padding: 10px;
+    }
+
+    .tablaMobile .fila .columna .header{
+        width: 40%;
+        background-color: #cecece;
+        font-weight: bold;
+    }
+
+    .tablaMobile .fila .columna .contenido{
+        width: 60%;
+    }
+
+    .tablaMobile .fila .columna:last-of-type .header, .tablaMobile .fila .columna:last-of-type .contenido{
+        border-bottom: 1px solid #cecece;
+    }
+
+   #servicio{
+        background-color: #cecece;
+    }
+}
+
+/* TABLA DESKTOP */
+
+@media screen and (min-width: 768px) {
+
+    .tablaMobile{
+        display: none;
+    }
+
+    .tableDesktop {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    
+    .tableDesktop tr th {
+        background-color: #cecece;
+        border: 1px solid #cecece;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .tableDesktop tr td {
+        border: 1px solid #cecece;
+        padding: 5px;
+        text-align: left;
+    }
+}
+

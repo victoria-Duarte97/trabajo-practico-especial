@@ -1,0 +1,173 @@
+/*Estilos basicos para la visualizacion de la pagina*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*MOBILE FIRST*/
+
+@media screen and (max-width: 768px) {  
+
+/* Hacemos que el nombre de la pagina desaparezca cuando estamos en mobile */
+
+.logoContainer p{
+display: none;
+}
+
+/*Estilos para los botones de abrir y cerrar*/
+
+.abrir-menu,
+.cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 32px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.abrir-menu {
+    color: #1c1c1c;
+}
+
+.cerrar-menu {
+    color: #ececec;
+}
+
+/*Estilos para la barra de navegacion*/
+
+.nav {
+    opacity: 0;
+    visibility: hidden; /*ocultamos la nav documento sin afectar al diseño de la página*/
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 16px; /*especificamos el espacio entre el boton de cerrar y la ul*/
+    position: fixed; /*hacemos que el background desplegado al abrir la barra de navegacion llegue hasta el final*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 32px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); /*hace que al abrir la barra de navegacion el resto de la pagina se sobree*/
+}
+
+/* con javascript le damos la funcion visible para la barra de navegacion cuando apretamos el menu hamburguesa */
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    flex-direction: column;
+    align-items: end;
+}
+
+.nav-list li a {
+    color: #ececec;
+    text-decoration: none;
+}
+
+/* estilos del footer */
+
+.footerContainer {
+    display: flex;
+    margin-top: 50px;
+    padding: 20px 10px;
+}
+
+.logoFooter_Container {
+    width: 30%;
+}
+
+/* estilo de las redes sociales */
+
+.redesSociales_Container ul li {
+    list-style: none;
+}
+
+}
+
+/* Estilos basicos DESKTOP*/
+
+@media screen and (min-width: 768px) {
+
+    .abrir-menu, .cerrar-menu{
+    display: none;
+    }
+
+    .nav-list li a{
+        color: #030303;
+        text-decoration: none;
+    }
+
+}
+
+.encabezado{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /*Asegura que el encabezado esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #ececec;
+}
+
+/* logo y titulo */
+
+.logoContainer{
+    display: flex;
+}
+
+.logoContainer p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#imgLogo{
+    max-width: 80px;
+}
+
+/* barra de navegacion */
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #ececec;
+}
+
+
+.redesSociales_Container ul li {
+    list-style: none;
+}
+
+/* modo oscuro */
+
+body {
+    background-color: #fefcfc;
+    /* Color de fondo para modo claro */
+    color: #030303;
+    /* Color de texto para modo claro */
+}
+
+
+.dark-mode {
+    background-color: #100f0f;
+    color: #f0f0f0;
+
+}

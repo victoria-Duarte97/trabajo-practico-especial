@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+
+    /* Estilos del html nosotros */
+
+    .main_Container div{
+        padding: 1rem;
+    }
+    
+    .asideContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .asideContainer img{
+        width: 50%;
+        margin: 10px;
+    }
+
+    .asideContainer div{
+        margin: 10px 10px;
+    }
+}

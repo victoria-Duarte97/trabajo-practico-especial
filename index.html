@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Salon & Spa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="home/index.css">
+    <link rel="stylesheet" href="estilosPredeterminados.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <div class="logoContainer">
+            <img src="home/imagenes/imgLogo.png" alt="Logo de la pagina con elementos utilizados en un salon de belleza"
+                id="imgLogo">
+            <p class="tituloLogo_Container">ELEGANCE SALON & SPA</p>
+        </div>
+        <!-- Barrea de navegacion -->
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servs.html">Servicios</a></li>
+                <li><a href="nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="contacto/contacto.html">Contacto</a></li>
+                <li><button onclick="toggleDarkMode()"><i class="bi bi-lightbulb"></i></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main_Contaniner">
+
+        <div class="titleContainer">
+            <h1>¡Bienvenido a Elegance Salon & Spa, nuestro oasis de belleza y bienestar!</h1>
+
+            <p>
+                En Elegance Salon & Spa, nos dedicamos a brindarte una experiencia única donde la belleza se fusiona con
+                el lujo
+                y la relajación. Nuestro talentoso equipo de estilistas y esteticistas está aquí para realzar tu belleza
+                natural y
+                mimarte de pies a cabeza.
+            </p>
+            <p>
+                Déjanos ser tu destino de belleza de confianza, donde cada visita te deje radiante y rejuvenecido. ¡Ven
+                y descubre la
+                diferencia en Elegance Salon & Spa hoy mismo!
+            </p>
+        </div>
+
+        <div class="imgMain_Container">
+            <img class="imgMain" src="home/imagenes/imgPrincipalSection.jpg" alt="">
+        </div>
+
+    </main>
+    <!-- inicio del section -->
+    <section class="sectionContainer">
+        <!-- titulo del section -->
+        <h2>NUESTRO STAF</h2>
+        <!-- listado del staf -->
+        <div class="listaStafContainer">
+            <ul>
+                <li>
+                    <!-- fotos del staf -->
+                    <img class="imgPeluquero" src="home/imagenes/fotoPerfilPeluquera.png"
+                        alt="Mujer peluquera sosteniendo una tijera">
+                    <!-- oficios y nombres del staf -->
+                    <h3>Peluquera</h3>
+                    <p>Valeria Garcia</p>
+                </li>
+
+                <li>
+                    <img class="imgColorista" src="home/imagenes/fotoPerfilColorista.png"
+                        alt="Mujer colorista sosteniendo dos brochas para color">
+                    <h3>Colorista</h3>
+                    <p>Camila López</p>
+                </li>
+
+                <li>
+                    <img class="imgBarbero" src="home/imagenes/fotoPerfilBarbero.png" alt="Hombre barbero">
+                    <h3>Barbero</h3>
+                    <p>Sebastián Martínez</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- inicio del footer -->
+    <footer class="footerContainer">
+        <div class="logoFooter_Container">
+            <img src="home/imagenes/imgLogo.png" alt="" id="imgLogo">
+        </div>
+
+        <div class="redesSociales_Container">
+            <ul>
+                <div>
+                    <li><i class="bi bi-instagram"></i>Instagram</li>
+                </div>
+                <div>
+                    <li><i class="bi bi-facebook"></i>Facebook</li>
+                </div>
+                <div>
+                    <li><i class="bi bi-whatsapp"></i>Whatsapp</li>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilosPredeterminados.css">
+    <link rel="stylesheet" href="servicios/servicios.css">
+</head>
+<body>
+    <header class="encabezado">
+
+        <div class="logoContainer">
+            <img src="home/imagenes/imgLogo.png" alt="Logo de la pagina con elementos utilizados en un salon de belleza"
+                id="imgLogo">
+            <p class="tituloLogo_Container">ELEGANCE SALON & SPA</p>
+        </div>
+        <!-- Barrea de navegacion -->
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servs.html">Servicios</a></li>
+                <li><a href="nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="contacto/contacto.html">Contacto</a></li>
+                <li><button class="darkMode" onclick="toggleDarkMode()"><i class="bi bi-lightbulb"></i></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <table class="tableDesktop">
+        <tr class="serviciosContainer">
+            <th>Tipo de servicio</th>
+            <th>Cantidad de cabello</th>
+            <th>Costo</th>
+        </tr>
+        <tr>
+            <td>Corte</td>
+            <td></td>
+            <td>$10.000</td>
+        </tr>
+        <tr>
+            <td>Brushing</td>
+            <td>Corto</td>
+            <td>$12.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Medio</td>
+            <td>$17.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Largo</td>
+            <td>$19.000</td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td>Corto</td>
+            <td>$15.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Medio</td>
+            <td>$20.000</td>
+        </tr>
+    </tr>
+        <tr>
+            <td></td>
+            <td>Largo</td>
+            <td>$25.000</td>
+        </tr>
+        <tr>
+            <td>Tono sobre tono</td>
+            <td>Corto</td>
+            <td>$20.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Medio</td>
+            <td>$25.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Largo</td>
+            <td>$30.000</td>
+        </tr>
+        <tr>
+            <td>Decoloracion</td>
+            <td>Corto</td>
+            <td>$30.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Medio</td>
+            <td>$35.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Largo</td>
+            <td>$40.000</td>
+        </tr>
+    </table>
+
+    <div class="tablaMobile">
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Tipo de servicio</div>
+                <div class="contenido" id="servicio">Corte</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$10.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Tipo de servicio</div>
+                <div class="contenido" id="servicio">Brushing</div>
+            </div>
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Corto</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$12.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Medio</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$17.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Largo</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$19.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Tipo de servicio</div>
+                <div class="contenido" id="servicio">Color</div>
+            </div>
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Corto</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$25.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Medio</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$20.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Largo</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$25.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Tipo de servicio</div>
+                <div class="contenido" id="servicio">Tono sobre tono</div>
+            </div>
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Corto</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$20.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Medio</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$25.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Largo</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$30.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Tipo de servicio</div>
+                <div class="contenido" id="servicio">Decoloracion</div>
+            </div>
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Corto</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$30.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Medio</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$35.000</div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <div class="header">Cantidad de pelo</div>
+                <div class="contenido">Largo</div>
+            </div>
+            <div class="columna">
+                <div class="header">Costo</div>
+                <div class="contenido">$40.000</div>
+            </div>
+        </div>
+    </div>
+
+ <!-- inicio del footer -->
+ <footer class="footerContainer">
+    <div class="logoFooter_Container">
+        <img src="home/imagenes/imgLogo.png" alt="" id="imgLogo">
+    </div>
+
+    <div class="redesSociales_Container">
+        <ul>
+            <div>
+                <li><i class="bi bi-instagram"></i>Instagram</li>
+            </div>
+            <div>
+                <li><i class="bi bi-facebook"></i>Facebook</li>
+            </div>
+            <div>
+                <li><i class="bi bi-whatsapp"></i>Whatsapp</li>
+            </div>
+        </ul>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
